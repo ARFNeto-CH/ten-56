@@ -1,0 +1,58 @@
+so pra testar, ultimo valor dos 125 a partir de 0 = 124
+range = [3 5 10 6 3]
+
+range is = [3 5 10 6 3]
+        planes = 5
+        unit size = 4
+tquant = 2700
+        total size = 10800
+
+offset para a[24][80] em int a[23,79] = 1919
+offset para o ultimo elemento de a[3][5][10][6][3] = 2699
+offset para o a[1][3][1][2][0] em int a[3][5][10][6][3] = 1464
+
+
+teste listoff("3 5 10 6 3","1 3 1 2 3",n) ... listoff_str(char* range, char* sub)
+
+        dimensoes = 5
+        Vetor range:  3 5 10 6 3
+        Vetor   sub:  1 3 1 2 3
+
+Chamando listoff com os vetores criados. de ordem 5
+
+n = 5
+Range: 3 5 10 6 3
+  Sub: 1 3 1 2 3
+
+Base: 1 3 1 2 0
+offset da base : 1464 offset do final: 1466
+
+teste listoff("3 5","4 4",n) ... listoff_str(char* range, char* sub)
+
+        dimensoes = 2
+        Vetor range:  3 5
+        Vetor   sub:  4 4
+
+Chamando listoff com os vetores criados. de ordem 2
+
+n = 2
+Range: 3 5
+  Sub: 4 4
+
+Base: 0 0
+offset da base : 0 offset do final: 14
+
+teste listoff("3 5 2","2 6 2",n) ... listoff_str(char* range, char* sub)
+
+        dimensoes = 3
+        Vetor range:  3 5 2
+        Vetor   sub:  2 6 2
+
+Chamando listoff com os vetores criados. de ordem 3
+
+n = 3
+Range: 3 5 2
+  Sub: 2 6 2
+
+Base: 2 0 0
+offset da base : 20 offset do final: 29
