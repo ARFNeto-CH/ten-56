@@ -92,7 +92,7 @@ int* aloca_exemplo_range(char* range)
 tquant = %d\n\ttotal size = %d\n\n",
 		range, planos, sizeof(int), sz, sz*sizeof(int) );
 
-	return NULL;
+	return (int*) malloc( sz*sizeof(int));
 };
 
 
@@ -153,7 +153,7 @@ void listoff(const int* range, const  int* sub, int n)
 		novo[i] = range[i] - 1;
 	};	// for
 	printf("offset do final: %d ", calcula_offset(range, novo, n));
-
+	free(novo);
 	return;
 };	// listoff()
 
